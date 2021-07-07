@@ -29,7 +29,13 @@
     и выведите их в консоль. -->
 
     <script>
-
+        "use strict"
+        let link = document.querySelectorAll('div[class="card-body"] a.card-link');
+        console.log(link);
+        /* for (let i = 0; i < link.length; i++) {
+             console.log(link[i].innerHTML);
+         }*/
+        link.forEach(i => console.log(i.innerHTML));
     </script>
 </body>
 
